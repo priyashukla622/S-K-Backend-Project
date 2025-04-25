@@ -1,8 +1,10 @@
 import express from "express";
-import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from 'cors';
 import feedbackRoutes from "./routes/feedbackRoute.js";
+
+
+
 
 const app=express();
 app.use(express.json())
@@ -21,5 +23,5 @@ mongoose.connect(MongoDB,{
 app.use("/api/feedbacks", feedbackRoutes);
 
 app.listen(PORT,()=>{
-    console.log(`server is running on port ${PORT}`)
+    console.log(`server is running on 
 })
